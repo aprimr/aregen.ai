@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#logo {
+  background: linear-gradient(90deg, #84ffc9, #becbe3, #eca0ff);
+  font-size: 27px;
+  font-weight: 500;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
