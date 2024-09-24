@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import { useState } from 'react';
 import InputField from './components/InputField';
+import aregGPT from "./assets/aregGPT.png"
+import profile from "./assets/profile.svg"
 
 function App() {
   const [question, setQuestion] = useState('');
@@ -48,13 +50,13 @@ function App() {
                 <div className='h-full w-full px-6 py-2 text-sm bg-green-300 rounded-3xl rounded-tr-lg'>
                   {entry.que}
                 </div>
-                <img src="../public/profile.svg" alt="logo" className='h-9 w-9 rounded-md' />
+                <img src={profile} alt="logo" className='h-9 w-9 rounded-md' />
               </div>
             </div>
             {/* Answer */}
             <div className='h-auto w-full flex justify-start'>
               <div className='h-auto w-auto flex gap-2'>
-                <img src="../public/aregGPT.png" alt="logo" className='h-9 w-9 rounded-md' />
+                <img src={aregGPT} alt="logo" className='h-9 w-9 rounded-md' />
                 <div className='h-auto w-auto px-6 py-2 text-sm bg-slate-300 rounded-3xl rounded-tl-lg'>
                   {entry.ans}
                 </div>
