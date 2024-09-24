@@ -19,7 +19,7 @@ function App() {
     setInputField('Generating...');
 
     const response = await axios({
-      url: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDPrOD8V8sm-NotmiaYQ3pX7jy8hFU_b2o",
+      url: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_GEMINI_API}`,
       method: "post",
       data: {
         "contents": [{
