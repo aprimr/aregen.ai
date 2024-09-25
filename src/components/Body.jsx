@@ -1,6 +1,5 @@
 import React from 'react'
 import aregGPT from "../assets/aregGPT.png"
-import { CiLocationArrow1 } from "react-icons/ci";
 
 function Body() {
   return (
