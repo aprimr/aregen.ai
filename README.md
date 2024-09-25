@@ -1,3 +1,3 @@
 # areGen.ai
 
-visit:
+visit: https://aregen-ai-aprim.netlify.app/
