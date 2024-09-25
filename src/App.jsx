@@ -5,6 +5,7 @@ import { useState } from 'react';
 import InputField from './components/InputField';
 import aregGPT from "./assets/aregGPT.png"
 import profile from "./assets/profile.svg"
+import Body from './components/Body';
 
 function App() {
   const [question, setQuestion] = useState('');
@@ -41,6 +42,7 @@ function App() {
   return (
     <Home>
       <Navbar />
+        {data.length==0&&<Body />} 
       <div className='w-full px-2 mt-2 mb-20 pb-20'>
         {data.map((entry, index) => (
           <div key={index} className='mb-3'>
@@ -57,7 +59,7 @@ function App() {
             <div className='h-auto w-full flex justify-start'>
               <div className='h-auto w-auto flex gap-2'>
                 <img src={aregGPT} alt="logo" className='h-9 w-9 rounded-md' />
-                <div className='h-auto w-auto px-6 py-2 text-sm bg-slate-300 rounded-3xl rounded-tl-lg'>
+                <div className='h-auto w-auto px-6 py-2 text-sm bg-slate-600 text-slate-200 rounded-3xl rounded-tl-lg'>
                   {entry.ans}
                 </div>
               </div>

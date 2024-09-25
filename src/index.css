@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+body, html {
+  background-color: #334155;
+}
 
 #logo {
   background: linear-gradient(90deg, #84ffc9, #becbe3, #eca0ff);
@@ -9,4 +12,22 @@
   font-weight: 500;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.greet-text {
+  background: linear-gradient(90deg, #84ffc9, #becbe3, #eca0ff, #eca0ff, #eca0ff, #eca0ff, #eca0ff, #eca0ff, #eca0ff);
+  font-size: 50px;
+  font-weight: 700;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 450px) {
+  .greet-text {
+    background: linear-gradient(90deg, #84ffc9, #becbe3, #eca0ff, #eca0ff);
+    font-size: 50px;
+    font-weight: 700;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
