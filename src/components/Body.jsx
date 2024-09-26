@@ -3,7 +3,7 @@ import aregGPT from "../assets/aregGPT.png"
 
 function Body() {
   return (
-    <div className='h-[90%] w-full px-3 py-44 flex justify-center items-center md:py-24'>
+    <div className='h-[90%] w-full px-3 py-44 flex justify-center items-center md:py-[17rem]'>
       <div className='h-[90%] w-[90%] flex flex-col justify-center items-center'>
         <div className='h-16 w-16 rotate-12'>
           <img src={aregGPT} alt="logo" className='rounded-xl'/>
